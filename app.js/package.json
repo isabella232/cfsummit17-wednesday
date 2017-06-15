@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "express": "^4.15.3",
+    "hazelcast-client": "0.6.1",
+    "pug": "^2.0.0-rc.2",
+    "superagent": "^2.3.0"
+  },
+  "engines": {
+    "node": "7.10.0"
+  },
+  "name": "com.hazelcast.cfsummit",
+  "version": "1.0.0",
+  "description": "the application demonstrates caching techniques with nodejs and hazelcast",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "caching",
+    "hazelcast"
+  ],
+  "author": "Viktor Gamov",
+  "license": "MIT"
+}

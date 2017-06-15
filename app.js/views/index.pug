@@ -1,0 +1,9 @@
+html
+    head
+        title= title
+    body
+        h3= message
+        ul
+            each obj in links
+                li
+                    a(class = 'button' href=obj.link) #{obj.desc}

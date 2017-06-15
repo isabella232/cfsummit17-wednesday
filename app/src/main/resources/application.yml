@@ -1,0 +1,4 @@
+spring:
+  application:
+    # Prefix with dashes to stop STS complaining
+    name: --@project.artifactId@--

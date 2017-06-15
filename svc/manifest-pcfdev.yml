@@ -1,0 +1,8 @@
+# For deploying to PCF DEV
+---
+applications:
+- name: svc
+  memory: 1024M
+  buildpack: java_buildpack
+  routes:
+  - route: svc.local.pcfdev.io

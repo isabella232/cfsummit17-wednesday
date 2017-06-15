@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments :: head" />
+
+<body>
+	<div th:include="fragments :: header">?</div>
+
+	<div class="mainpane">
+
+			<h1>Main Menu</h1>
+
+			<h3>Person</h3>
+
+                        <table style="border-style:ridge;">
+                                <tr>
+                                        <td>
+                                                <form name="select" th:action="@{/person/list}">
+                                                        <input class="mySubmit" type="submit" value="List"/>
+                                                </form>
+                                        </td>
+                                </tr>
+                        </table>
+
+			<h3>Stats</h3>
+
+                        <table style="border-style:ridge;">
+                                <tr>
+                                        <td>
+                                                <form name="select" th:action="@{/stats}">
+                                                        <input class="mySubmit" type="submit" value="View"/>
+                                                </form>
+                                        </td>
+                                </tr>
+                        </table>
+
+			<h3>Debug</h3>
+
+                        <table style="border-style:ridge;">
+                                <tr>
+                                        <td>
+                                                <form name="select" th:action="@{/debug/addresses}">
+                                                        <input class="mySubmit" type="submit" value="Server IPs"/>
+                                                </form>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td>
+                                                <form name="select" th:action="@{/debug/vcap}">
+                                                        <input class="mySubmit" type="submit" value="VCAP_SERVICES"/>
+                                                </form>
+                                        </td>
+                                </tr>
+                        </table>
+                
+    </div>
+                                
+	<div th:include="fragments :: footer">?</div>
+</body>
+
+</html>

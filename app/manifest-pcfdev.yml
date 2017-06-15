@@ -1,0 +1,12 @@
+# For deploying to PCF DEV
+---
+applications:
+- name: app
+  memory: 1024M
+  buildpack: java_buildpack
+  routes:
+  - route: app.local.pcfdev.io
+# Hazelcast server service
+  services:
+  - cfsummit
+  

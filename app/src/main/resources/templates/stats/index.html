@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments :: head" />
+
+<body>
+        <div th:include="fragments :: header">?</div>
+
+        <div class="mainpane">
+
+                <h1>Stats</h1>
+                
+                        <table class="myData">
+                                <tr>
+                                	<th>Total Page Hits</th> 
+                                </tr>
+                                <tr>
+                                        <td th:text="${countAny}" >?</td>
+                                </tr>
+                                <tr>
+                                	<th>Front Page Hits</th> 
+                                </tr>
+                                <tr>
+                                        <td th:text="${countRoot}" >?</td>
+                                </tr>
+                                <tr>
+                                	<th>Person Count</th> 
+                                </tr>
+                                <tr>
+                                        <td th:text="${personCount}" >?</td>
+                                </tr>
+                        </table>
+                        
+    	</div>
+                
+        <div th:include="fragments :: footer">?</div>
+</body>
+
+</html>

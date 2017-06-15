@@ -1,0 +1,13 @@
+# For deploying to Hazelcast's PCF environment
+---
+applications:
+- name: app
+  memory: 1024M
+  buildpack: java_buildpack_offline
+  routes:
+  - route: app.apps.pcf.hazelcast.com
+# Hazelcast server service
+  services:
+  - cfsummit
+  
+  

@@ -1,0 +1,31 @@
+# For deploying to PCF DEV
+---
+applications:
+- name: app.js
+  memory: 1024M
+  command: node app.js
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  routes:
+  - route: appjs.local.pcfdev.io
+# Hazelcast server service
+  services:
+  - cfsummit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
